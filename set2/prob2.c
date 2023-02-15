@@ -3,7 +3,6 @@
 #define Size 100001
 void solve(char s[])
 {
-    //aaabaabaa
     int n = strlen(s);
     for(int l=n;l>=0;l--)
     {
@@ -17,14 +16,12 @@ void solve(char s[])
             }
             if(l1>=r)
             {
-                // printf("%d",l);
                 for(int j=i;j<i+l;j++)
                 {
                      printf("%c",s[j]);
                 }
                 return;
             }
-            // printf("%d ",l);
         }
     }
 }
